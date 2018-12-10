@@ -1,0 +1,7 @@
+# this is the packages needed in a fresh virtual environment
+
+wxPython
+gooey
+jupyter
+pandas
+numpy
