@@ -9,3 +9,4 @@ customer-status.xlsx
 build
 dist
 *.spec
+__pycache__
