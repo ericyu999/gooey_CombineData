@@ -67,7 +67,7 @@ def combine_files(src_directory):
     for f in glob.glob(os.path.join(src_directory, "sales-*.xlsx")):
         df = pd.read_excel(f)
         all_data = all_data.append(df, ignore_index=True)
-    all_data['date'] = pd.to_datetime(all_date['date'])
+    all_data['date'] = pd.to_datetime(all_data['date'])
     return all_data
 
 def add_customer_status(sales_data, customer_file):
@@ -91,6 +91,7 @@ def save_results(sales_data, output):
     writer = pd.ExcelWriter(output_file, engine='xlsxwriter')
     summarized_sales = summarized_sales.reset_index()
     summarized_sales.to_excel(writer)
+    writer.save()
 
 if __name__ == '__main__':
     conf = parse_args()

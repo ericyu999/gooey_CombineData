@@ -2,3 +2,10 @@ Untitled.ipynb
 myvenv_gooey
 .ipynb_checkpoints
 .DS_Store
+output
+source_excel
+customer-status.xlsx
+*.json
+build
+dist
+*.spec

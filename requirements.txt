@@ -5,3 +5,5 @@ gooey
 jupyter
 pandas
 numpy
+xlrd
+xlsxwriter
